@@ -59,7 +59,7 @@ public class PasswordGenerator {
           * n - specified size limit for the password
           *  user defined value
           */
-        for(i=0;i<n;i++){
+        for(i=0;;i++){
             do{
                 rn=r1.nextInt(4);
                 if(rn>0)
@@ -112,6 +112,10 @@ public class PasswordGenerator {
             break;
 
         }
+         if(password.length()==n)
+         {
+          break;
+         }
 
     }
       /*
